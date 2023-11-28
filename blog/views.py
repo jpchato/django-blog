@@ -5,7 +5,7 @@ from .models import Post
 # Create your views here.
 
 def blog_index(request):
-    posts = Post.objects.filter(status='published').order_by('-pubished_date')
+    posts = Post.objects.filter(status='published').order_by('-published_date')
     context = {
         "posts": posts,
     }
