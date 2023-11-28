@@ -1,0 +1,21 @@
+<!-- base_header.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Site's Title</title>
+    <!-- Add any additional head elements here -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'project_index' %}">Projects</a></li>
+                <li><a href="{% url 'blog_index' %}">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Rest of your base layout goes here -->
